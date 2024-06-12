@@ -1,5 +1,10 @@
 package settings
 
+type Setup struct {
+	Token       string
+	Environment Environment
+}
+
 type Environment int
 
 const (
@@ -9,11 +14,6 @@ const (
 
 func (e Environment) String() string {
 	return [...]string{"https://sandbox.asaas.com/api", "https://api.asaas.com"}[e-1]
-}
-
-type Configuration struct {
-	Token       string
-	Environment Environment
 }
 
 type Method int

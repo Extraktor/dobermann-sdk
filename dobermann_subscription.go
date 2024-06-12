@@ -4,22 +4,22 @@ import (
 	"github.com/extraktor/dobermann-sdk/settings"
 )
 
-func CreateSubscription(config settings.Configuration, client map[string]interface{}) error {
+func CreateSubscription(config settings.Setup, input interface{}) error {
 	return nil
 }
 
-func GetOneSubscription(config settings.Configuration, client map[string]interface{}) (error, interface{}) {
+func GetOneSubscription(config settings.Setup, input interface{}) (error, interface{}) {
 	return nil, nil
 }
 
-func GetListSubscription(config settings.Configuration, client map[string]interface{}) (error, interface{}) {
+func GetListSubscription(config settings.Setup, input interface{}) (error, interface{}) {
 	return nil, nil
 }
 
-func UpdateSubscription(config settings.Configuration, client map[string]interface{}) (error, interface{}) {
+func UpdateSubscription(config settings.Setup, input interface{}) (error, interface{}) {
 	return nil, nil
 }
 
-func DeleteSubscription(config settings.Configuration, client map[string]interface{}) error {
+func DeleteSubscription(config settings.Setup, input interface{}) error {
 	return nil
 }

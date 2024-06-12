@@ -5,7 +5,7 @@ import (
 	"github.com/extraktor/dobermann-sdk/settings"
 )
 
-func CreateClient(config settings.Configuration, input map[string]interface{}) (interface{}, error) {
+func CreateClient(config settings.Setup, input interface{}) (interface{}, error) {
 	result, err := session.Session(config, settings.GET, "/v3/customers", input)
 	if err != nil {
 		return nil, err
@@ -13,18 +13,18 @@ func CreateClient(config settings.Configuration, input map[string]interface{}) (
 	return result, nil
 }
 
-func GetOneClient(config settings.Configuration, input interface{}) (error, interface{}) {
+func GetOneClient(config settings.Setup, input interface{}) (error, interface{}) {
 	return nil, nil
 }
 
-func GetListClient(config settings.Configuration, input map[string]interface{}) (error, interface{}) {
+func GetListClient(config settings.Setup, input interface{}) (error, interface{}) {
 	return nil, nil
 }
 
-func UpdateClient(config settings.Configuration, input map[string]interface{}) (error, interface{}) {
+func UpdateClient(config settings.Setup, input interface{}) (error, interface{}) {
 	return nil, nil
 }
 
-func DeleteClient(config settings.Configuration, input map[string]interface{}) error {
+func DeleteClient(config settings.Setup, input interface{}) error {
 	return nil
 }
