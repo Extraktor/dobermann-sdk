@@ -6,7 +6,7 @@ import (
 	"github.com/monaco-io/request"
 )
 
-func Session(config settings.Configuration, method settings.Method, endpoint string, body interface{}) (interface{}, error) {
+func Session(config settings.Setup, method settings.Method, endpoint string, body interface{}) (interface{}, error) {
 	c := request.Client{
 		URL:    config.Environment.String() + endpoint,
 		Method: method.String(),
